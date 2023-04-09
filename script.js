@@ -21,7 +21,7 @@ const closeModal = document.querySelector('#maybe-later')
 // document.querySelector("#modal-container").addEventListener('scroll', showModalPopup);
 
 function showModalPopup () {
-    if (document.documentElement.scrollTop > 1500) {
+    if (document.documentElement.scrollTop > 1000) {
         showModal.style.display = 'block';
     }
 }
