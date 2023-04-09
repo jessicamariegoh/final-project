@@ -287,7 +287,14 @@ fieldset input {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    transform: translate(-50%, -50%);
 }
+
+/*took me significant fiddling to finally center the modal popup in the center of the page. set the position as absolute, not relative, not fixed! then you need 50% from the top, 50% from left, and use the transform property*/
 
 .modal-container { 
     position: fixed;
@@ -298,8 +305,8 @@ fieldset input {
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.4);
     display: flex;
-    align-items: center;
-    justify-content: center;
+    /*align-items: center;*/
+    /*justify-content: center;*/
     display: none;
 }
 
