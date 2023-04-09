@@ -30,7 +30,7 @@ document.addEventListener('scroll', showModalPopup);
 function closeModalPopup () {
     showModal.style.display = 'none';
 }
-document.addEventListener('click', closeModalPopup);
+closeModal.addEventListener('click', closeModalPopup);
 
 const userDismissed = sessionStorage.get('dismissed');
 
