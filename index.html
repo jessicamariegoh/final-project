@@ -9,17 +9,20 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,600;1,400&family=Lato:ital@0;1&family=Merriweather&family=Montserrat&display=swap" rel="stylesheet">
+    <script defer src="./script.js"></script>
     <title>The Eden Collective</title>
 </head>
 <body>
     <header>
-        <img class="logo" src="./assets/dummy_120x60_ffffff_cccccc.png" alt="">
+        <img class="logo" src="./assets/logo-6.jpg" alt="">
         <nav class="hamburger-search-menu">
-            <div class="search-icon"><svg class="search-icon" width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g id="Interface / Search_Magnifying_Glass">
-                <path id="Vector" d="M15 15L21 21M10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10C17 13.866 13.866 17 10 17Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </g>
-                </svg></div>
+            <div class="search-icon">
+                <svg class="search-icon" id="search-svg" width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="Interface / Search_Magnifying_Glass">
+                    <path id="Vector" d="M15 15L21 21M10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10C17 13.866 13.866 17 10 17Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </g>
+                    </svg>    
+            </div>
                 <div id = "hamburger" class="hamburger-icon">
                     <svg class="hamburger-icon" width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_429_11066)">
@@ -33,6 +36,15 @@
                         </svg>
                 </div>
         </nav>
+
+        <div class="search-bar-container" id="search-container">
+            <input type="search" placeholder="Search..." id="search-bar">
+
+            <svg id="close-search" fill="currentColor" width="800px" height="800px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 14.545L1.455 16 8 9.455 14.545 16 16 14.545 9.455 8 16 1.455 14.545 0 8 6.545 1.455 0 0 1.455 6.545 8z" fill-rule="evenodd"/>
+            </svg>
+                
+        </div>
     </header>
 
     <aside class="off-canvas-menu" id="main-menu">
@@ -51,8 +63,8 @@
     </aside>
 
     <main class="hero-container">
-        <h1>Massive hero caption</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <h1>Grow. Read. Live.</h1>
+        <p>Where work and words meet.</p>
     </main>
 
     <aside>
@@ -84,7 +96,7 @@
                 </div>
                 <div class="about-blurb">
                     <h3>A farm.</h3>
-                    <p class="about-blurb-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    <p class="about-blurb-text">Our community farm is a champion of the urban farming movement bringing sustainability and resilience back into the heart of city life.</p>
                 </div>
             </div>
 
@@ -108,7 +120,7 @@
                 </div>
                 <div class="about-blurb">
                     <h3>A journal.</h3>
-                    <p class="about-blurb-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    <p class="about-blurb-text">More than just a journal, this is the vanguard of the intellectual revival pondering the age-old question: what does it mean to live the good life?</p>
                 </div>
             </div>
 
@@ -133,7 +145,7 @@
                 </div>
                 <div class="about-blurb">
                     <h3>A community.</h3>
-                    <p class="about-blurb-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    <p class="about-blurb-text">We believe the good life, either with dirt under your fingernails or inkstains on your hands, is one meant to be shared.</p>
                 </div>
             </div>
         </div>
@@ -147,7 +159,7 @@
                 <h4>
                     <a href="#">Monthly farm open days</a>
                 </h4>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis magnam sint maxime quisquam!</p>
+                <p>We host a farmer's market, pizza night, craft beers and live music, every third Saturday of the month.</p>
             </article>
 
             <article class="farm-indiv-item">
@@ -155,7 +167,7 @@
                 <h4>
                     <a href="#">Volunteer with us</a>
                 </h4>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis magnam sint maxime quisquam!</p>
+                <p>Whether you're a retiree looking for a hobby or an office worker seeking escape from the corporate grind, our community farm has a place for you.</p>
             </article>
 
             <article class="farm-indiv-item">
@@ -163,7 +175,7 @@
                 <h4>
                     <a href="#">Fresh produce, delivered</a>
                 </h4>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis magnam sint maxime quisquam!</p>
+                <p>Curate your own box of fresh and seasonal produce and we'll have it delivered to your door.</p>
             </article>
         </div>
         <button>Find out more</button>
@@ -179,10 +191,10 @@
                 <div class="article-heading">
                     <h4>
                         <a href="#">
-                            Lorem ipsum.
+                            Its the <span class="article-italics">Oikonomia</span>, stupid.
                         </a>
                     </h4>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                    <p>Lessons from E.F. Schumacher on how to live life at a human scale.</p>
                 </div>
             </article>
     
@@ -193,10 +205,10 @@
                 <div class="article-heading">
                     <h4>
                         <a href="#">
-                            Lorem ipsum.
+                            Rooftop farming as a political act.
                         </a>
                     </h4>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                    <p>Redefining resistance to a mechanical age.</p>
                 </div>
             </article>
     
@@ -207,38 +219,52 @@
                 <div class="article-heading">
                     <h4>
                         <a href="#">
-                            Lorem ipsum.
+                            Finding rhythm.
                         </a>
                     </h4>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                    <p>The urban farming revival in the midst of lockdown.</p>
                 </div>
             </article>
         </div>
         <div class="journal-cta-footer">
             <a href="#">Browse the archive⟶</a>
-            <button>Subscribe</button>
+            <button id="journal-subscribe">Subscribe</button>
         </div>
     </section>
 
     <footer>
-        <p>The Eden Collective (c) 2023
+        <p>The Eden Collective &copy; 2023
         </p>
+        <div class="social-icons">
+            <a href="#">
+                <svg fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="50px" height="50px">    <path d="M25,3C12.85,3,3,12.85,3,25c0,11.03,8.125,20.137,18.712,21.728V30.831h-5.443v-5.783h5.443v-3.848 c0-6.371,3.104-9.168,8.399-9.168c2.536,0,3.877,0.188,4.512,0.274v5.048h-3.612c-2.248,0-3.033,2.131-3.033,4.533v3.161h6.588 l-0.894,5.783h-5.694v15.944C38.716,45.318,47,36.137,47,25C47,12.85,37.15,3,25,3z"/></svg>
+            </a>
+
+            <a href="#">
+                <svg fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="50px" height="50px">    <path d="M25,2C12.317,2,2,12.317,2,25s10.317,23,23,23s23-10.317,23-23S37.683,2,25,2z M36.237,20.524 c0.01,0.236,0.016,0.476,0.016,0.717C36.253,28.559,30.68,37,20.491,37c-3.128,0-6.041-0.917-8.491-2.489 c0.433,0.052,0.872,0.077,1.321,0.077c2.596,0,4.985-0.884,6.879-2.37c-2.424-0.044-4.468-1.649-5.175-3.847 c0.339,0.065,0.686,0.1,1.044,0.1c0.505,0,0.995-0.067,1.458-0.195c-2.532-0.511-4.441-2.747-4.441-5.432c0-0.024,0-0.047,0-0.07 c0.747,0.415,1.6,0.665,2.509,0.694c-1.488-0.995-2.464-2.689-2.464-4.611c0-1.015,0.272-1.966,0.749-2.786 c2.733,3.351,6.815,5.556,11.418,5.788c-0.095-0.406-0.145-0.828-0.145-1.262c0-3.059,2.48-5.539,5.54-5.539 c1.593,0,3.032,0.672,4.042,1.749c1.261-0.248,2.448-0.709,3.518-1.343c-0.413,1.292-1.292,2.378-2.437,3.064 c1.122-0.136,2.188-0.432,3.183-0.873C38.257,18.766,37.318,19.743,36.237,20.524z"/></svg>
+            </a>
+                
+            <a href="#">
+                <svg fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 30 30" width="30px" height="30px"><path d="M 15 2 C 7.832 2 2 7.832 2 15 C 2 22.168 7.832 28 15 28 C 22.168 28 28 22.168 28 15 C 28 7.832 22.168 2 15 2 z M 11.666016 6 L 18.332031 6 C 21.457031 6 24 8.5420156 24 11.666016 L 24 18.332031 C 24 21.457031 21.457984 24 18.333984 24 L 11.667969 24 C 8.5429688 24 6 21.457984 6 18.333984 L 6 11.667969 C 6 8.5429688 8.5420156 6 11.666016 6 z M 11.666016 8 C 9.6450156 8 8 9.6459688 8 11.667969 L 8 18.333984 C 8 20.354984 9.6459688 22 11.667969 22 L 18.333984 22 C 20.354984 22 22 20.354031 22 18.332031 L 22 11.666016 C 22 9.6450156 20.354031 8 18.332031 8 L 11.666016 8 z M 19.667969 9.6660156 C 20.035969 9.6660156 20.333984 9.9640312 20.333984 10.332031 C 20.333984 10.700031 20.035969 11 19.667969 11 C 19.299969 11 19 10.700031 19 10.332031 C 19 9.9640312 19.299969 9.6660156 19.667969 9.6660156 z M 15 10 C 17.757 10 20 12.243 20 15 C 20 17.757 17.757 20 15 20 C 12.243 20 10 17.757 10 15 C 10 12.243 12.243 10 15 10 z M 15 12 A 3 3 0 0 0 15 18 A 3 3 0 0 0 15 12 z"/></svg>
+            </a>
+        </div>
     </footer>
 
     <div class="modal-container" id="modal-container">
         <div class="modal-popup" id="modal-popup">
-            <fieldset>
-                <legend>
-                    <h4>Get The Eden Collective directly in your inbox.</h4>
-                </legend>
-                <input type="text" placeholder="Full name">
-                <input type="email" placeholder="Email">
-                <input type="submit" value="Subscribe" id="submit-subscribe">
-                <p id="maybe-later">Maybe later, thanks</p>
-            </fieldset>
+            <form action="">
+                <fieldset>
+                    <legend>
+                        <h4>Get The Eden Collective directly in your inbox.</h4>
+                    </legend>
+                    <input type="text" placeholder="Full name">
+                    <input type="email" placeholder="Email">
+                    <input type="submit" value="Subscribe" id="submit-subscribe">
+                    <p id="maybe-later">Maybe later, thanks</p>
+                </fieldset>
+            </form>
+            
         </div>
     </div>
-
-    <script src="./script.js"></script>
 </body>
 </html>
