@@ -27,7 +27,6 @@ nav {
 .logo {
     max-height: 40px;
 }
-/*I don't get why above a certain width, my hamburger and search icons disappear. Need to investigate. */
 
 .search-bar-container {
     position: absolute;
